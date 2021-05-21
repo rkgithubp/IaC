@@ -35,8 +35,8 @@ resource "aws_security_group" "web" {
 
   # HTTP access from anywhere
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 80h
+    to_port     = 80h
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
